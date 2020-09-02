@@ -3,7 +3,9 @@ var mongoose = require("mongoose");
 
 // Connect to MongoDB via Mongoose
 seeder.connect(
-  "mongodb://127.0.0.1:27017/db_staycation",
+  // "mongodb://127.0.0.1:27017/db_staycation",
+  "mongodb+srv://noorqidam:Aguero20@cluster0.bnrle.mongodb.net/db_staycation?retryWrites=true&w=majority",
+
   {
     useNewUrlParser: true,
     useCreateIndex: true,
@@ -54,33 +56,33 @@ var data = [
     model: "Category",
     documents: [
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc901111"),
+        _id: mongoose.Types.ObjectId("5f4e2bfc3400193b906c9d85"),
         name: "Houses with beauty backyard",
         itemId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902222") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902223") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902224") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902225") },
+          { _id: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a") },
+          { _id: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a") },
+          { _id: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e") },
+          { _id: mongoose.Types.ObjectId("5f4e30423400193b906c9da2") },
         ],
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc901112"),
+        _id: mongoose.Types.ObjectId("5f4e2c0a3400193b906c9d86"),
         name: "Hotels with large living room",
         itemId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902226") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902227") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902228") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902229") },
+          { _id: mongoose.Types.ObjectId("5f4e422b3400193b906c9db3") },
+          { _id: mongoose.Types.ObjectId("5f4e42583400193b906c9db7") },
+          { _id: mongoose.Types.ObjectId("5f4e42a33400193b906c9dbb") },
+          { _id: mongoose.Types.ObjectId("5f4e42e83400193b906c9dbf") },
         ],
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc901113"),
-        name: "Apartment with kitchen",
+        _id: mongoose.Types.ObjectId("5f4e2c163400193b906c9d87"),
+        name: "Apartment with kitchen set",
         itemId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902230") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902231") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902232") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902233") },
+          { _id: mongoose.Types.ObjectId("5f4e43213400193b906c9dc3") },
+          { _id: mongoose.Types.ObjectId("5f4e43603400193b906c9dc7") },
+          { _id: mongoose.Types.ObjectId("5f4e43d73400193b906c9dcb") },
+          { _id: mongoose.Types.ObjectId("5f4e440d3400193b906c9dcf") },
         ],
       },
     ],
@@ -90,568 +92,384 @@ var data = [
   {
     model: "Item",
     documents: [
-      // Tabby Town
-      {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
-        title: "Tabby Town",
-        price: 12,
-        sumBooking: 1,
-        country: "Indonesia",
-        city: "Lampung",
-        isPopular: false,
-        description:
-          "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
-        unit: "night",
-        imageId: [
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb1") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb2") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb3") },
-        ],
-        featureId: [
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa09") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa10") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa11") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa12") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa13") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa14") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa15") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa16") },
-        ],
-        activityId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb05") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb06") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb07") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb08") },
-        ],
-        categoryId: "5e96cbe292b97300fc901111",
-      },
-      // Seattle Rain
+      // houses
+      // done
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
-        title: "Seattle Rain",
+        _id: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
+        title: "Luxury Villa",
         price: 20,
-        sumBooking: 2,
+        sumBooking: 0,
         country: "Indonesia",
-        city: "Bandung",
-        isPopular: false,
+        city: "Bali",
+        isPopular: true,
         description:
-          "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
+          "Minimal techno is a mnimalist subgenre of techno music. It is charaterized by a stripped-down aesthethic that exploits the use of repetition and understand development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
         unit: "night",
         imageId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb4") },
+          { _id: mongoose.Types.ObjectId("5f4e2d023400193b906c9d8b") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb5") },
+          { _id: mongoose.Types.ObjectId("5f4e2d023400193b906c9d8c") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb6") },
+          { _id: mongoose.Types.ObjectId("5f4e2d023400193b906c9d8d") },
         ],
         featureId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa01") },
+          { _id: mongoose.Types.ObjectId("5f4e2dac3400193b906c9d8e") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa02") },
+          { _id: mongoose.Types.ObjectId("5f4e2db73400193b906c9d8f") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa03") },
+          { _id: mongoose.Types.ObjectId("5f4e2dc23400193b906c9d90") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa04") },
+          { _id: mongoose.Types.ObjectId("5f4e2dcf3400193b906c9d91") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa05") },
+          { _id: mongoose.Types.ObjectId("5f4e2ddb3400193b906c9d92") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa06") },
+          { _id: mongoose.Types.ObjectId("5f4e2de63400193b906c9d93") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa07") },
+          { _id: mongoose.Types.ObjectId("5f4e2df23400193b906c9d94") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa08") },
+          { _id: mongoose.Types.ObjectId("5f4e2e003400193b906c9d95") },
         ],
         activityId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb01") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb02") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb03") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb04") },
+          { _id: mongoose.Types.ObjectId("5f4e2f6f3400193b906c9d96") },
+          { _id: mongoose.Types.ObjectId("5f4e2f7d3400193b906c9d97") },
+          { _id: mongoose.Types.ObjectId("5f4e2f8f3400193b906c9d98") },
+          { _id: mongoose.Types.ObjectId("5f4e2f9c3400193b906c9d99") },
         ],
-        categoryId: "5e96cbe292b97300fc901111",
+        categoryId: mongoose.Types.ObjectId("5f4e2bfc3400193b906c9d85"),
       },
-
-      // Wodden Pit
+      // done
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902224"),
-        title: "Wodden Pit",
-        price: 20,
-        sumBooking: 3,
+        // done
+        _id: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
+        title: "Khayangan Estate",
+        price: 30,
+        sumBooking: 0,
         country: "Indonesia",
-        city: "Bandung",
+        city: "Bali",
         isPopular: false,
         description:
-          "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
+          "Minimal techno is a mnimalist subgenre of techno music. It is charaterized by a stripped-down aesthethic that exploits the use of repetition and understand development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
         unit: "night",
         imageId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb7") },
+          { _id: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9b") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb8") },
+          { _id: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9c") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb9") },
+          { _id: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9d") },
         ],
         featureId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa01") },
+          { _id: mongoose.Types.ObjectId("5f4e30893400193b906c9da6") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa02") },
+          { _id: mongoose.Types.ObjectId("5f4e309c3400193b906c9da7") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa03") },
+          { _id: mongoose.Types.ObjectId("5f4e30a73400193b906c9da8") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa04") },
+          { _id: mongoose.Types.ObjectId("5f4e30b13400193b906c9da9") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa05") },
+          { _id: mongoose.Types.ObjectId("5f4e30bc3400193b906c9daa") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa06") },
+          { _id: mongoose.Types.ObjectId("5f4e30c53400193b906c9dab") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa07") },
+          { _id: mongoose.Types.ObjectId("5f4e30d23400193b906c9dac") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa08") },
+          { _id: mongoose.Types.ObjectId("5f4e30da3400193b906c9dad") },
         ],
         activityId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb01") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb02") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb03") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb04") },
+          { _id: mongoose.Types.ObjectId("5f4e40823400193b906c9dae") },
+          { _id: mongoose.Types.ObjectId("5f4e40b63400193b906c9daf") },
+          { _id: mongoose.Types.ObjectId("5f4e40cb3400193b906c9db0") },
+          { _id: mongoose.Types.ObjectId("5f4e40ef3400193b906c9db1") },
         ],
-        categoryId: "5e96cbe292b97300fc901111",
+        categoryId: mongoose.Types.ObjectId("5f4e2bfc3400193b906c9d85"),
       },
-
-      // Anggana
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902225"),
-        title: "Anggana",
-        price: 20,
-        sumBooking: 4,
+        // done
+        _id: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
+        title: "Puncak Resort",
+        price: 35,
+        sumBooking: 1,
         country: "Indonesia",
-        city: "Bandung",
+        city: "Bogor",
         isPopular: false,
         description:
-          "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
+          "Minimal techno is a mnimalist subgenre of techno music. It is charaterized by a stripped-down aesthethic that exploits the use of repetition and understand development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
         unit: "night",
         imageId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd10") },
+          { _id: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9f") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd11") },
+          { _id: mongoose.Types.ObjectId("5f4e300c3400193b906c9da0") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd12") },
+          { _id: mongoose.Types.ObjectId("5f4e300c3400193b906c9da1") },
         ],
         featureId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa01") },
+          { _id: mongoose.Types.ObjectId("5f4e47cb3400193b906c9dd5") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa02") },
+          { _id: mongoose.Types.ObjectId("5f4e47e13400193b906c9dd6") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa03") },
+          { _id: mongoose.Types.ObjectId("5f4e47f33400193b906c9dd7") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa04") },
+          { _id: mongoose.Types.ObjectId("5f4e48033400193b906c9dd8") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa05") },
+          { _id: mongoose.Types.ObjectId("5f4e48123400193b906c9dd9") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa06") },
+          { _id: mongoose.Types.ObjectId("5f4e48223400193b906c9dda") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa07") },
+          { _id: mongoose.Types.ObjectId("5f4e482c3400193b906c9ddb") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa08") },
+          { _id: mongoose.Types.ObjectId("5f4e48383400193b906c9ddc") },
         ],
         activityId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb01") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb02") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb03") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb04") },
+          { _id: mongoose.Types.ObjectId("5f4e410d3400193b906c9db2") },
+          { _id: mongoose.Types.ObjectId("5f4e4c2d3400193b906c9de5") },
+          { _id: mongoose.Types.ObjectId("5f4e4d413400193b906c9de6") },
+          { _id: mongoose.Types.ObjectId("5f4ef5d73400193b906c9dea") },
         ],
-        categoryId: "5e96cbe292b97300fc901111",
+        categoryId: mongoose.Types.ObjectId("5f4e2bfc3400193b906c9d85"),
       },
-
-      // Green Park
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902226"),
-        title: "Green Park",
-        price: 20,
-        sumBooking: 5,
+        // done
+        _id: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
+        title: "Padessa Maison",
+        price: 30,
+        sumBooking: 0,
         country: "Indonesia",
         city: "Bandung",
         isPopular: false,
         description:
-          "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
+          "Minimal techno is a mnimalist subgenre of techno music. It is charaterized by a stripped-down aesthethic that exploits the use of repetition and understand development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
         unit: "night",
         imageId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd13") },
+          { _id: mongoose.Types.ObjectId("5f4e30433400193b906c9da3") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd14") },
+          { _id: mongoose.Types.ObjectId("5f4e30433400193b906c9da4") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd15") },
+          { _id: mongoose.Types.ObjectId("5f4e30433400193b906c9da5") },
         ],
         featureId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa01") },
+          { _id: mongoose.Types.ObjectId("5f4e48653400193b906c9ddd") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa02") },
+          { _id: mongoose.Types.ObjectId("5f4e48743400193b906c9dde") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa03") },
+          { _id: mongoose.Types.ObjectId("5f4e487d3400193b906c9ddf") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa04") },
+          { _id: mongoose.Types.ObjectId("5f4e48873400193b906c9de0") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa05") },
+          { _id: mongoose.Types.ObjectId("5f4e48903400193b906c9de1") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa06") },
+          { _id: mongoose.Types.ObjectId("5f4e48a13400193b906c9de2") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa07") },
+          { _id: mongoose.Types.ObjectId("5f4e48aa3400193b906c9de3") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa08") },
+          { _id: mongoose.Types.ObjectId("5f4e48b83400193b906c9de4") },
         ],
         activityId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb01") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb02") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb03") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb04") },
+          { _id: mongoose.Types.ObjectId("5f4e50f63400193b906c9de7") },
+          { _id: mongoose.Types.ObjectId("5f4e510f3400193b906c9de8") },
+          { _id: mongoose.Types.ObjectId("5f4e512c3400193b906c9de9") },
+          { _id: mongoose.Types.ObjectId("5f4ef5f93400193b906c9deb") },
         ],
-        categoryId: "5e96cbe292b97300fc901112",
+        categoryId: mongoose.Types.ObjectId("5f4e2bfc3400193b906c9d85"),
       },
-
-      // Podo Wae
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902227"),
-        title: "Podo Wae",
+        // done
+        _id: mongoose.Types.ObjectId("5f4e422b3400193b906c9db3"),
+        title: "Cattelya",
         price: 20,
-        sumBooking: 6,
+        sumBooking: 0,
         country: "Indonesia",
-        city: "Bandung",
+        city: "Medan",
         isPopular: false,
         description:
-          "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
+          "Minimal techno is a mnimalist subgenre of techno music. It is charaterized by a stripped-down aesthethic that exploits the use of repetition and understand development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
         unit: "night",
         imageId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd16") },
+          { _id: mongoose.Types.ObjectId("5f4e422b3400193b906c9db4") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd17") },
+          { _id: mongoose.Types.ObjectId("5f4e422b3400193b906c9db5") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd18") },
+          { _id: mongoose.Types.ObjectId("5f4e422b3400193b906c9db6") },
         ],
-        featureId: [
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa01") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa02") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa03") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa04") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa05") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa06") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa07") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa08") },
-        ],
-        activityId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb01") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb02") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb03") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb04") },
-        ],
-        categoryId: "5e96cbe292b97300fc901112",
+        featureId: [],
+        activityId: [],
+        categoryId: mongoose.Types.ObjectId("5f4e2c0a3400193b906c9d86"),
       },
-
-      // Silver Rain
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902228"),
-        title: "Silver Rain",
-        price: 20,
-        sumBooking: 7,
+        // done
+        _id: mongoose.Types.ObjectId("5f4e42583400193b906c9db7"),
+        title: "Classic Mode",
+        price: 30,
+        sumBooking: 0,
         country: "Indonesia",
-        city: "Bandung",
+        city: "Semarang",
         isPopular: false,
         description:
-          "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
+          "Minimal techno is a mnimalist subgenre of techno music. It is charaterized by a stripped-down aesthethic that exploits the use of repetition and understand development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
         unit: "night",
         imageId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd19") },
+          { _id: mongoose.Types.ObjectId("5f4e42583400193b906c9db8") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd20") },
+          { _id: mongoose.Types.ObjectId("5f4e42583400193b906c9db9") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd21") },
+          { _id: mongoose.Types.ObjectId("5f4e42583400193b906c9dba") },
         ],
-        featureId: [
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa01") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa02") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa03") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa04") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa05") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa06") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa07") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa08") },
-        ],
-        activityId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb01") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb02") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb03") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb04") },
-        ],
-        categoryId: "5e96cbe292b97300fc901112",
+        featureId: [],
+        activityId: [],
+        categoryId: mongoose.Types.ObjectId("5f4e2c0a3400193b906c9d86"),
       },
-
-      // Cashville
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902229"),
-        title: "Cashville",
-        price: 20,
-        sumBooking: 8,
+        // done
+        _id: mongoose.Types.ObjectId("5f4e42a33400193b906c9dbb"),
+        title: "Nature Room",
+        price: 35,
+        sumBooking: 0,
         country: "Indonesia",
-        city: "Bandung",
+        city: "Bogor",
         isPopular: false,
         description:
-          "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
+          "Minimal techno is a mnimalist subgenre of techno music. It is charaterized by a stripped-down aesthethic that exploits the use of repetition and understand development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
         unit: "night",
         imageId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd22") },
+          { _id: mongoose.Types.ObjectId("5f4e42a33400193b906c9dbc") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd23") },
+          { _id: mongoose.Types.ObjectId("5f4e42a33400193b906c9dbd") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd24") },
+          { _id: mongoose.Types.ObjectId("5f4e42a33400193b906c9dbe") },
         ],
-        featureId: [
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa01") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa02") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa03") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa04") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa05") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa06") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa07") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa08") },
-        ],
-        activityId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb01") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb02") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb03") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb04") },
-        ],
-        categoryId: "5e96cbe292b97300fc901112",
+        featureId: [],
+        activityId: [],
+        categoryId: mongoose.Types.ObjectId("5f4e2c0a3400193b906c9d86"),
       },
-
-      // PS Wood
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902230"),
-        title: "PS Wood",
-        price: 20,
-        sumBooking: 9,
+        // done
+        _id: mongoose.Types.ObjectId("5f4e42e83400193b906c9dbf"),
+        title: "Dress Atractive",
+        price: 40,
+        sumBooking: 0,
         country: "Indonesia",
-        city: "Bandung",
+        city: "Yogyakarta",
         isPopular: false,
         description:
-          "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
+          "Minimal techno is a mnimalist subgenre of techno music. It is charaterized by a stripped-down aesthethic that exploits the use of repetition and understand development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
         unit: "night",
         imageId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd25") },
+          { _id: mongoose.Types.ObjectId("5f4e42e83400193b906c9dc0") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd26") },
+          { _id: mongoose.Types.ObjectId("5f4e42e83400193b906c9dc1") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd27") },
+          { _id: mongoose.Types.ObjectId("5f4e42e93400193b906c9dc2") },
         ],
-        featureId: [
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa01") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa02") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa03") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa04") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa05") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa06") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa07") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa08") },
-        ],
-        activityId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb01") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb02") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb03") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb04") },
-        ],
-        categoryId: "5e96cbe292b97300fc901113",
+        featureId: [],
+        activityId: [],
+        categoryId: mongoose.Types.ObjectId("5f4e2c0a3400193b906c9d86"),
       },
-
-      // One Five
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902231"),
-        title: "One Five",
-        price: 20,
-        sumBooking: 11,
+        // done
+        _id: mongoose.Types.ObjectId("5f4e43213400193b906c9dc3"),
+        title: "Medium Model",
+        price: 25,
+        sumBooking: 0,
         country: "Indonesia",
-        city: "Bandung",
+        city: "Depok",
         isPopular: false,
         description:
-          "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
+          "Minimal techno is a mnimalist subgenre of techno music. It is charaterized by a stripped-down aesthethic that exploits the use of repetition and understand development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
         unit: "night",
         imageId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd28") },
+          { _id: mongoose.Types.ObjectId("5f4e43213400193b906c9dc4") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd29") },
+          { _id: mongoose.Types.ObjectId("5f4e43223400193b906c9dc5") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd30") },
+          { _id: mongoose.Types.ObjectId("5f4e43223400193b906c9dc6") },
         ],
-        featureId: [
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa01") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa02") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa03") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa04") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa05") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa06") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa07") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa08") },
-        ],
-        activityId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb01") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb02") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb03") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb04") },
-        ],
-        categoryId: "5e96cbe292b97300fc901113",
+        featureId: [],
+        activityId: [],
+        categoryId: mongoose.Types.ObjectId("5f4e2c163400193b906c9d87"),
       },
-
-      // Minimal
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902232"),
-        title: "Minimal",
-        price: 20,
-        sumBooking: 13,
+        // done
+        _id: mongoose.Types.ObjectId("5f4e43603400193b906c9dc7"),
+        title: "Modern Shinning",
+        price: 30,
+        sumBooking: 0,
         country: "Indonesia",
-        city: "Bandung",
+        city: "Cimahi",
         isPopular: false,
         description:
-          "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
+          "Minimal techno is a mnimalist subgenre of techno music. It is charaterized by a stripped-down aesthethic that exploits the use of repetition and understand development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
         unit: "night",
         imageId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd32") },
+          { _id: mongoose.Types.ObjectId("5f4e43603400193b906c9dc8") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd31") },
+          { _id: mongoose.Types.ObjectId("5f4e43603400193b906c9dc9") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd33") },
+          { _id: mongoose.Types.ObjectId("5f4e43613400193b906c9dca") },
         ],
-        featureId: [
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa01") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa02") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa03") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa04") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa05") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa06") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa07") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa08") },
-        ],
-        activityId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb01") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb02") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb03") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb04") },
-        ],
-        categoryId: "5e96cbe292b97300fc901113",
+        featureId: [],
+        activityId: [],
+        categoryId: mongoose.Types.ObjectId("5f4e2c163400193b906c9d87"),
       },
-
-      // Stays Home
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902233"),
-        title: "Stays Home",
-        price: 20,
-        sumBooking: 14,
+        // done
+        _id: mongoose.Types.ObjectId("5f4e43d73400193b906c9dcb"),
+        title: "Olympic Dark",
+        price: 45,
+        sumBooking: 0,
         country: "Indonesia",
-        city: "Bandung",
+        city: "Purwkarta",
         isPopular: false,
         description:
-          "Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
+          "Minimal techno is a mnimalist subgenre of techno music. It is charaterized by a stripped-down aesthethic that exploits the use of repetition and understand development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
         unit: "night",
         imageId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd36") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd34") },
+          { _id: mongoose.Types.ObjectId("5f4e43d73400193b906c9dcc") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd35") },
+          { _id: mongoose.Types.ObjectId("5f4e43d73400193b906c9dcd") },
           // done
+          { _id: mongoose.Types.ObjectId("5f4e43d73400193b906c9dce") },
         ],
-        featureId: [
+        featureId: [],
+        activityId: [],
+        categoryId: mongoose.Types.ObjectId("5f4e2c163400193b906c9d87"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e440d3400193b906c9dcf"),
+        title: "Minimalist",
+        price: 35,
+        sumBooking: 0,
+        country: "Indonesia",
+        city: "Jakarta",
+        isPopular: false,
+        description:
+          "Minimal techno is a mnimalist subgenre of techno music. It is charaterized by a stripped-down aesthethic that exploits the use of repetition and understand development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.",
+        unit: "night",
+        imageId: [
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa01") },
+          { _id: mongoose.Types.ObjectId("5f4e440d3400193b906c9dd0") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa02") },
+          { _id: mongoose.Types.ObjectId("5f4e440d3400193b906c9dd1") },
           // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa03") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa04") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa05") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa06") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa07") },
-          // done
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa08") },
+          { _id: mongoose.Types.ObjectId("5f4e440d3400193b906c9dd2") },
         ],
-        activityId: [
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb01") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb02") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb03") },
-          { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb04") },
-        ],
-        categoryId: "5e96cbe292b97300fc901113",
+        featureId: [],
+        activityId: [],
+        categoryId: mongoose.Types.ObjectId("5f4e2c163400193b906c9d87"),
       },
     ],
   },
@@ -662,153 +480,153 @@ var data = [
     documents: [
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb1"),
-        imageUrl: "images/image-mostpicked-1-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e2d023400193b906c9d8b"),
+        imageUrl: "images/1598958849907.png",
       },
       // done
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb2"),
-        imageUrl: "images/image-mostpicked-2-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e2d023400193b906c9d8c"),
+        imageUrl: "images/1598958849920.png",
       },
       // done
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb3"),
-        imageUrl: "images/image-mostpicked-3-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e2d023400193b906c9d8d"),
+        imageUrl: "images/1598958849959.png",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb4"),
-        imageUrl: "images/image-mostpicked-4-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9b"),
+        imageUrl: "images/1598959564949.jpg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb5"),
-        imageUrl: "images/item-1.png",
+        _id: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9c"),
+        imageUrl: "images/1598959564952.jpg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb6"),
-        imageUrl: "images/image-mostpicked-5-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9d"),
+        imageUrl: "images/1598959564953.png",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb7"),
-        imageUrl: "images/image-mostpicked-7-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9f"),
+        imageUrl: "images/1598959628134.jpg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb8"),
-        imageUrl: "images/image-mostpicked-8-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e300c3400193b906c9da0"),
+        imageUrl: "images/1598959628135.jpg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb9"),
-        imageUrl: "images/image-mostpicked-9-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e300c3400193b906c9da1"),
+        imageUrl: "images/1598959628137.png",
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd10"),
-        imageUrl: "images/image-mostpicked-10-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e30433400193b906c9da3"),
+        imageUrl: "images/1598959682649.jpg",
       },
       // done
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd11"),
-        imageUrl: "images/image-mostpicked-11-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e30433400193b906c9da4"),
+        imageUrl: "images/1598959682650.jpg",
       },
       // done
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd12"),
-        imageUrl: "images/image-mostpicked-12-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e30433400193b906c9da5"),
+        imageUrl: "images/1598959682652.png",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd13"),
-        imageUrl: "images/image-mostpicked-13-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e422b3400193b906c9db4"),
+        imageUrl: "images/1598964266950.jpeg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd14"),
-        imageUrl: "images/image-mostpicked-14-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e422b3400193b906c9db5"),
+        imageUrl: "images/1598964266957.png",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd15"),
-        imageUrl: "images/image-mostpicked-15-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e422b3400193b906c9db6"),
+        imageUrl: "images/1598964266976.jpeg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd16"),
-        imageUrl: "images/image-category-1-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e42583400193b906c9db8"),
+        imageUrl: "images/1598964312309.jpeg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd17"),
-        imageUrl: "images/image-category-2-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e42583400193b906c9db9"),
+        imageUrl: "images/1598964312319.png",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd18"),
-        imageUrl: "images/image-category-3-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e42583400193b906c9dba"),
+        imageUrl: "images/1598964312330.jpeg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd19"),
-        imageUrl: "images/image-category-4-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e42a33400193b906c9dbc"),
+        imageUrl: "images/1598964387293.jpeg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd20"),
-        imageUrl: "images/image-category-5-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e42a33400193b906c9dbd"),
+        imageUrl: "images/1598964387296.png",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd21"),
-        imageUrl: "images/image-category-6-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e42a33400193b906c9dbe"),
+        imageUrl: "images/1598964387299.jpg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd22"),
-        imageUrl: "images/image-category-7-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e42e83400193b906c9dc0"),
+        imageUrl: "images/1598964456430.jpeg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd23"),
-        imageUrl: "images/image-category-8-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e42e83400193b906c9dc1"),
+        imageUrl: "images/1598964456433.png",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd24"),
-        imageUrl: "images/image-category-9-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e42e93400193b906c9dc2"),
+        imageUrl: "images/1598964456449.jpeg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd25"),
-        imageUrl: "images/image-category-7-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e43213400193b906c9dc4"),
+        imageUrl: "images/1598964513734.png",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd26"),
-        imageUrl: "images/image-category-8-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e43223400193b906c9dc5"),
+        imageUrl: "images/1598964513739.jpg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd27"),
-        imageUrl: "images/image-category-9-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e43223400193b906c9dc6"),
+        imageUrl: "images/1598964513741.jpg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd28"),
-        imageUrl: "images/image-category-10-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e43603400193b906c9dc8"),
+        imageUrl: "images/1598964576592.png",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd29"),
-        imageUrl: "images/image-category-11-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e43603400193b906c9dc9"),
+        imageUrl: "images/1598964576597.jpg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd30"),
-        imageUrl: "images/image-category-12-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e43613400193b906c9dca"),
+        imageUrl: "images/1598964576599.jpg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd31"),
-        imageUrl: "images/image-category-13-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e43d73400193b906c9dcc"),
+        imageUrl: "images/1598964695150.png",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd32"),
-        imageUrl: "images/image-category-14-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e43d73400193b906c9dcd"),
+        imageUrl: "images/1598964695151.jpeg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd33"),
-        imageUrl: "images/image-category-15-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e43d73400193b906c9dce"),
+        imageUrl: "images/1598964695155.jpg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd34"),
-        imageUrl: "images/image-category-16-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e440d3400193b906c9dd0"),
+        imageUrl: "images/1598964748969.png",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd35"),
-        imageUrl: "images/image-category-17-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e440d3400193b906c9dd1"),
+        imageUrl: "images/1598964748975.jpeg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cd36"),
-        imageUrl: "images/image-category-18-min.jpg",
+        _id: mongoose.Types.ObjectId("5f4e440d3400193b906c9dd2"),
+        imageUrl: "images/1598964748987.jpeg",
       },
     ],
   },
@@ -819,132 +637,262 @@ var data = [
     documents: [
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa01"),
+        _id: mongoose.Types.ObjectId("5f4e2dac3400193b906c9d8e"),
         name: "bedroom",
-        qty: 2,
-        imageUrl: "images/feature-1.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
+        qty: 3,
+        imageUrl: "images/1598959020571.png",
+        itemId: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa02"),
+        _id: mongoose.Types.ObjectId("5f4e2db73400193b906c9d8f"),
         name: "living room",
-        qty: 23,
-        imageUrl: "images/feature-2.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
-      },
-      {
-        // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa03"),
-        name: "televison",
-        qty: 12,
-        imageUrl: "images/feature-3.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
-      },
-      {
-        // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa04"),
-        name: "televison",
         qty: 5,
-        imageUrl: "images/feature-4.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
+        imageUrl: "images/1598959031736.png",
+        itemId: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa05"),
-        name: "mbp/s",
-        qty: 5,
-        imageUrl: "images/feature-5.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
+        _id: mongoose.Types.ObjectId("5f4e2dc23400193b906c9d90"),
+        name: "bathroom",
+        qty: 2,
+        imageUrl: "images/1598959042324.png",
+        itemId: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa06"),
-        name: "unit ready",
-        qty: 5,
-        imageUrl: "images/feature-6.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
+        _id: mongoose.Types.ObjectId("5f4e2dcf3400193b906c9d91"),
+        name: "dinning room",
+        qty: 2,
+        imageUrl: "images/1598959055652.png",
+        itemId: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa07"),
-        name: "refigrator",
+        _id: mongoose.Types.ObjectId("5f4e2ddb3400193b906c9d92"),
+        name: "wifi mbp/s",
         qty: 5,
-        imageUrl: "images/feature-7.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
+        imageUrl: "images/1598959067280.png",
+        itemId: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa08"),
-        name: "televion",
+        _id: mongoose.Types.ObjectId("5f4e2de63400193b906c9d93"),
+        name: "air conditioner",
+        qty: 3,
+        imageUrl: "images/1598959078203.png",
+        itemId: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e2df23400193b906c9d94"),
+        name: "refrigerator",
         qty: 5,
-        imageUrl: "images/feature-8.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
+        imageUrl: "images/1598959090382.png",
+        itemId: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e2e003400193b906c9d95"),
+        name: "television",
+        qty: 2,
+        imageUrl: "images/1598959104201.png",
+        itemId: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
       },
       // item 2
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa09"),
+        _id: mongoose.Types.ObjectId("5f4e30893400193b906c9da6"),
+        name: "bedroom",
+        qty: 5,
+        imageUrl: "images/1598959753824.png",
+        itemId: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e309c3400193b906c9da7"),
+        name: "living room",
+        qty: 7,
+        imageUrl: "images/1598959772235.png",
+        itemId: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e30a73400193b906c9da8"),
+        name: "bathroom",
+        qty: 3,
+        imageUrl: "images/1598959783965.png",
+        itemId: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e30b13400193b906c9da9"),
+        name: "dining room",
+        qty: 2,
+        imageUrl: "images/1598959793262.png",
+        itemId: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e30bc3400193b906c9daa"),
+        name: "wifi mbp/s",
+        qty: 3,
+        imageUrl: "images/1598959804135.png",
+        itemId: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e30c53400193b906c9dab"),
+        name: "air conditioner",
+        qty: 3,
+        imageUrl: "images/1598959813813.png",
+        itemId: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e30d23400193b906c9dac"),
+        name: "refrigerator",
+        qty: 2,
+        imageUrl: "images/1598959826218.png",
+        itemId: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e30da3400193b906c9dad"),
+        name: "television",
+        qty: 3,
+        imageUrl: "images/1598959834485.png",
+        itemId: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
+      },
+      // item 3
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e47cb3400193b906c9dd5"),
         name: "bedroom",
         qty: 2,
-        imageUrl: "images/feature-1.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
+        imageUrl: "images/1598965707652.png",
+        itemId: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa10"),
+        _id: mongoose.Types.ObjectId("5f4e47e13400193b906c9dd6"),
         name: "living room",
-        qty: 23,
-        imageUrl: "images/feature-2.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
+        qty: 4,
+        imageUrl: "images/1598965729373.png",
+        itemId: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa11"),
-        name: "televison",
-        qty: 12,
-        imageUrl: "images/feature-3.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
+        _id: mongoose.Types.ObjectId("5f4e47f33400193b906c9dd7"),
+        name: "bathroom",
+        qty: 3,
+        imageUrl: "images/1598965747889.png",
+        itemId: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa12"),
-        name: "televison",
-        qty: 5,
-        imageUrl: "images/feature-4.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
+        _id: mongoose.Types.ObjectId("5f4e48033400193b906c9dd8"),
+        name: "dining room",
+        qty: 3,
+        imageUrl: "images/1598965763849.png",
+        itemId: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa13"),
-        name: "mbp/s",
-        qty: 5,
-        imageUrl: "images/feature-5.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
+        _id: mongoose.Types.ObjectId("5f4e48123400193b906c9dd9"),
+        name: "wifi mbp/s",
+        qty: 2,
+        imageUrl: "images/1598965778086.png",
+        itemId: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa14"),
-        name: "unit ready",
-        qty: 5,
-        imageUrl: "images/feature-6.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
+        _id: mongoose.Types.ObjectId("5f4e48223400193b906c9dda"),
+        name: "air conditioner",
+        qty: 2,
+        imageUrl: "images/1598965794888.png",
+        itemId: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa15"),
-        name: "refigrator",
-        qty: 5,
-        imageUrl: "images/feature-7.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
+        _id: mongoose.Types.ObjectId("5f4e482c3400193b906c9ddb"),
+        name: "refrigerator",
+        qty: 1,
+        imageUrl: "images/1598965804324.png",
+        itemId: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
       },
       {
         // done
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90aa16"),
-        name: "televion",
-        qty: 5,
-        imageUrl: "images/feature-8.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
+        _id: mongoose.Types.ObjectId("5f4e48383400193b906c9ddc"),
+        name: "television",
+        qty: 2,
+        imageUrl: "images/1598965816044.png",
+        itemId: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
+      },
+      // item 4
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e48653400193b906c9ddd"),
+        name: "bedroom",
+        qty: 4,
+        imageUrl: "images/1598965861615.png",
+        itemId: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e48743400193b906c9dde"),
+        name: "living room",
+        qty: 6,
+        imageUrl: "images/1598965876360.png",
+        itemId: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e487d3400193b906c9ddf"),
+        name: "bathroom",
+        qty: 3,
+        imageUrl: "images/1598965885945.png",
+        itemId: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e48873400193b906c9de0"),
+        name: "dining room",
+        qty: 3,
+        imageUrl: "images/1598965895797.png",
+        itemId: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e48903400193b906c9de1"),
+        name: "wifi mbp/s",
+        qty: 2,
+        imageUrl: "images/1598965904074.png",
+        itemId: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e48a13400193b906c9de2"),
+        name: "air conditioner",
+        qty: 3,
+        imageUrl: "images/1598965921971.png",
+        itemId: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e48aa3400193b906c9de3"),
+        name: "refrigerator",
+        qty: 2,
+        imageUrl: "images/1598965930931.png",
+        itemId: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
+      },
+      {
+        // done
+        _id: mongoose.Types.ObjectId("5f4e48b83400193b906c9de4"),
+        name: "television",
+        qty: 3,
+        imageUrl: "images/1598965944398.png",
+        itemId: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
       },
     ],
   },
@@ -955,61 +903,119 @@ var data = [
     documents: [
       // done
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb01"),
-        name: "Green Lake",
+        _id: mongoose.Types.ObjectId("5f4e2f6f3400193b906c9d96"),
+        name: "Pondanu Cabins",
         type: "Nature",
-        imageUrl: "images/activity-1.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
+        imageUrl: "images/1598959471675.png",
+        itemId: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb02"),
-        name: "Dog Clubs",
-        type: "Pool",
-        imageUrl: "images/activity-2.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
+        _id: mongoose.Types.ObjectId("5f4e2f7d3400193b906c9d97"),
+        name: "Luxury",
+        type: "Hotel",
+        imageUrl: "images/1598959485814.png",
+        itemId: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb03"),
-        name: "Labour and Wait",
-        type: "Shopping",
-        imageUrl: "images/activity-3.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
+        _id: mongoose.Types.ObjectId("5f4e2f8f3400193b906c9d98"),
+        name: "Cemara Tidar",
+        type: "Villa",
+        imageUrl: "images/1598959503205.png",
+        itemId: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb04"),
-        name: "Labour and Wait",
-        type: "Shopping",
-        imageUrl: "images/activity-4.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
+        _id: mongoose.Types.ObjectId("5f4e2f9c3400193b906c9d99"),
+        name: "Jimbaran",
+        type: "Beach",
+        imageUrl: "images/1598959516133.png",
+        itemId: mongoose.Types.ObjectId("5f4e2d013400193b906c9d8a"),
       },
       // done 2
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb05"),
-        name: "Green Lake",
+        _id: mongoose.Types.ObjectId("5f4e40823400193b906c9dae"),
+        name: "Herbal Insani",
         type: "Nature",
-        imageUrl: "images/activity-3.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
+        imageUrl: "images/1598963842215.jpg",
+        itemId: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb06"),
-        name: "Dog Clubs",
-        type: "Pool",
-        imageUrl: "images/activity-2.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
+        _id: mongoose.Types.ObjectId("5f4e40b63400193b906c9daf"),
+        name: "Labour Market",
+        type: "Food Court",
+        imageUrl: "images/1598963894538.png",
+        itemId: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb07"),
-        name: "Labour and Wait",
-        type: "Shopping",
-        imageUrl: "images/activity-1.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
+        _id: mongoose.Types.ObjectId("5f4e40cb3400193b906c9db0"),
+        name: "Indrayanti",
+        type: "Beach",
+        imageUrl: "images/1598963915809.jpg",
+        itemId: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90bb08"),
-        name: "Labour and Wait",
-        type: "Shopping",
-        imageUrl: "images/activity-4.png",
-        itemId: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
+        _id: mongoose.Types.ObjectId("5f4e40ef3400193b906c9db1"),
+        name: "Bromountain",
+        type: "Hotel",
+        imageUrl: "images/1598963951178.jpg",
+        itemId: mongoose.Types.ObjectId("5f4e2fcd3400193b906c9d9a"),
+      },
+      // done 3
+      {
+        _id: mongoose.Types.ObjectId("5f4e410d3400193b906c9db2"),
+        name: "Geopark",
+        type: "Beach",
+        imageUrl: "images/1598963981514.png",
+        itemId: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
+      },
+      {
+        _id: mongoose.Types.ObjectId("5f4e4c2d3400193b906c9de5"),
+        name: "Green Canyon",
+        type: "Nature",
+        imageUrl: "images/1598966829357.jpeg",
+        itemId: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
+      },
+      {
+        _id: mongoose.Types.ObjectId("5f4e4d413400193b906c9de6"),
+        name: "Flying Fork",
+        type: "Games",
+        imageUrl: "images/1598967105507.jpg",
+        itemId: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
+      },
+      {
+        _id: mongoose.Types.ObjectId("5f4e50f63400193b906c9de7"),
+        name: "Floating Market",
+        type: "Market Shop",
+        imageUrl: "images/1598968054981.jpg",
+        itemId: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
+      },
+      // done 4
+      {
+        _id: mongoose.Types.ObjectId("5f4e510f3400193b906c9de8"),
+        name: "Situ Patenggang",
+        type: "Lake",
+        imageUrl: "images/1598968079258.jpg",
+        itemId: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
+      },
+      {
+        _id: mongoose.Types.ObjectId("5f4e512c3400193b906c9de9"),
+        name: "Kawah Putih",
+        type: "Nature",
+        imageUrl: "images/1598968108657.jpg",
+        itemId: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
+      },
+      {
+        _id: mongoose.Types.ObjectId("5f4ef5d73400193b906c9dea"),
+        name: "Borobudur",
+        type: "Hotel",
+        imageUrl: "images/1599010263248.jpeg",
+        itemId: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
+      },
+      {
+        _id: mongoose.Types.ObjectId("5f4ef5f93400193b906c9deb"),
+        name: "Santika",
+        type: "Hotel",
+        imageUrl: "images/1599010297302.jpeg",
+        itemId: mongoose.Types.ObjectId("5f4e30423400193b906c9da2"),
       },
     ],
   },
@@ -1020,24 +1026,23 @@ var data = [
     model: "Booking",
     documents: [
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cee1"),
-        bookingStartDate: "12-12-2020",
-        bookingEndDate: "12-12-2020",
-        invoice: 1231231,
+        _id: mongoose.Types.ObjectId("5f4e454b3400193b906c9dd4"),
+        bookingStartDate: "2-9-2020",
+        bookingEndDate: "5-9-2020",
+        invoice: 2626687,
         itemId: {
-          _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
-          title: "Village Angga",
-          price: 6,
+          _id: mongoose.Types.ObjectId("5f4e300c3400193b906c9d9e"),
+          title: "Puncak Resort",
+          price: 35,
           duration: 2,
         },
         total: 12,
-        memberId: mongoose.Types.ObjectId("5e96cbe292b97300fc903333"),
-        bankId: mongoose.Types.ObjectId("5e96cbe292b97300fc903323"),
+        memberId: mongoose.Types.ObjectId("5f4e454a3400193b906c9dd3"),
         payments: {
-          proofPayment: "images/bukti.jpeg",
+          proofPayment: "images/1598965066549.jpeg",
           bankFrom: "BCA",
-          status: "Proses",
-          accountHolder: "ang",
+          status: "Accept",
+          accountHolder: "qidam",
         },
       },
     ],
@@ -1062,24 +1067,31 @@ var data = [
         email: "elfinsanjaya1207@gmail.com",
         phoneNumber: "082377954008",
       },
+      {
+        _id: mongoose.Types.ObjectId("5f4e454a3400193b906c9dd3"),
+        firstName: "Noor",
+        lastName: "Qidam",
+        email: "noorqidam@gmail.com",
+        phoneNumber: "085771603597",
+      },
     ],
   },
   {
     model: "Bank",
     documents: [
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc903322"),
-        nameBank: "Mandiri",
-        nomorRekening: "089898",
-        name: "elfin",
-        imageUrl: "images/logo bca.png",
+        _id: mongoose.Types.ObjectId("5f4e2c7b3400193b906c9d88"),
+        nameBank: "BCA",
+        nomorRekening: "74662723",
+        name: "Staycation",
+        imageUrl: "images/1598958715460.jpg",
       },
       {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc903323"),
-        nameBank: "BCA",
-        nomorRekening: "878678",
-        name: "elfin",
-        imageUrl: "images/logo mandiri.png",
+        _id: mongoose.Types.ObjectId("5f4e2c8b3400193b906c9d89"),
+        nameBank: "Mandiri",
+        nomorRekening: "98667479",
+        name: "Staycation",
+        imageUrl: "images/1598958731048.jpg",
       },
     ],
   },
@@ -1090,12 +1102,6 @@ var data = [
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc903345"),
         username: "admin",
         password: "rahasia",
-      },
-      {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc903346"),
-        username: "superadmin",
-        password: "rahasia",
-        role: "admin",
       },
     ],
   },
