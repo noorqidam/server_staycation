@@ -35,7 +35,6 @@ This project is still on very early development stage. If you want to use for pr
 
 - Make sure You had been install NodeJs in your system https://nodejs.org/
 - Then install Bootstrap as UI Component https://getbootstrap.com/
-- Then install React HTML Parser https://www.npmjs.com/package/react-html-parser
 
 ## Support Me :)
 
